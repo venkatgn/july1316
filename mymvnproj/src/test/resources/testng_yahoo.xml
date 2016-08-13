@@ -3,7 +3,7 @@
  <parameter name="browser" value="firefox" />
    <classes>
      <class name="yahoo.Sanity_Test" /> 
-     <class name="web.Sample" />          
+            
    </classes>
  </test>
  <test name="tst_Sanity_chrome">
