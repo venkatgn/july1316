@@ -1,0 +1,26 @@
+<suite name="Yahoo">
+ <test name="tst_Sanity_ff">
+ <parameter name="browser" value="firefox" />
+   <classes>
+     <class name="yahoo.Sanity_Test" /> 
+     <class name="web.Sample" />          
+   </classes>
+ </test>
+ <test name="tst_Sanity_chrome">
+ <parameter name="browser" value="chrome" />
+   <classes>
+     <class name="yahoo.Sanity_Test" />           
+   </classes>
+ </test>
+ <test name="tst_ReTest_chrome">
+ <parameter name="browser" value="chrome" />
+   <classes>
+     <class name="yahoo.ReTest" />           
+   </classes>
+ </test>
+ <listeners>
+  <listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+  <listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+ </listeners>
+</suite>
